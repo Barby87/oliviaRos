@@ -32,13 +32,13 @@
                 <!-- clase ml-auto (margin-left: auto) para que los elementos del ul se alnien hacia la derecha-->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de mí <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#about">Acerca de mí <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Trabajos</a>
+                        <a class="nav-link" href="#work">Trabajos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -52,13 +52,13 @@
 
             <p class="my-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima illum similique quos consequuntur aliquid, laudantium delectus placeat voluptate eos dolorem et dicta ducimus temporibus, magnam labore voluptatibus explicabo voluptates ex?</p>
 
-            <a class="btn btn-lg btn-outline-info mr-3">Trabajos</a>
+            <a class="btn btn-lg btn-outline-info mr-3" href="#work">Trabajos</a>
 
-            <a class="btn btn-lg btn-info">Contacto</a>
+            <a class="btn btn-lg btn-info" href="#contact">Contacto</a>
         </div>
     </header>
 
-    <section class="container text-center my-5">
+    <section id="about" class="container text-center my-5">
 
         <h2 class="display-3 font-weight-bold my-4">Acerca de mi</h2>
         <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eliam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagitis.</p>
@@ -84,9 +84,10 @@
         </div>
     </section>
 
-    <section class="container-fluid my-5 p-5 bg-info">
+    <section id="work" class="container-fluid my-5 p-5 bg-info">
         <h2 class="display-3 text-center font-weight-bold my-4 text-white">Mis trabajos</h2>
 
+        <!--Card 1-->
         <div class="card-deck">
             <div class="card">
                 <img class="card-img-top" src="assets/img/card-1.jpg" alt="Card image cap">
@@ -96,20 +97,76 @@
                         sed.
                     </p>
 
-                    <a class="btn btn-outline-info">Ver más</a>
+                    <a class="btn btn-outline-info" data-toggle="modal" data-target="#asado">Ver más</a>
                 </div>
             </div>
 
+            <div class="modal" id="asado" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Asado en la Patagonia</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid my-3" src="assets/img/card-1.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 2-->
             <div class="card">
                 <img class="card-img-top" src="assets//img/card-2.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Papas del fin del mundo</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, optio. Repudiandae, debitis, accusantium temporibus molestias maxime veniam quaerat ab, expedita tenetur odit quas natus eaque optio rerum quia sit adipisci.</p>
 
-                    <a class="btn btn-outline-info">Ver más</a>
+                    <a data-toggle="modal" data-target="#papas" class="btn btn-outline-info">Ver más</a>
                 </div>
             </div>
 
+            <div class="modal" id="papas" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Asado en la Patagonia</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid my-3" src="assets/img/card-2.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 3-->
             <div class="card">
                 <img class="card-img-top" src="assets/img/card-3.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -117,49 +174,76 @@
                     <h5 class="card-title">Salmones de Alaska</h5>
                     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro quidem blanditiis rem a accusamus quos quisquam molestias nobis delectus animi eum, unde, quod maxime tenetur recusandae voluptate exercitationem ducimus laudantium!</p>
 
-                    <a class="btn btn-outline-info">Ver más</a>
+                    <a data-toggle="modal" data-target="#salmones" class="btn btn-outline-info">Ver más</a>
 
+                </div>
+            </div>
+
+            <div id="salmones" class="modal " tabindex="-1 " role="dialog ">
+                <div class="modal-dialog " role="document ">
+                    <div class="modal-content ">
+                        <div class="modal-header ">
+                            <h5 class="modal-title ">Asado en la Patagonia</h5>
+                            <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                        <span aria-hidden="true ">&times;</span>
+                      </button>
+                        </div>
+                        <div class="modal-body ">
+                            <img class="img-fluid my-3 " src="assets/img/card-3.jpg " alt=" ">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container my-5">
-        <h2 class="display-3 font-weight-bold text-center my-4">Contáctame</h2>
-        <p class="my-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, asperiores facilis. Beatae, reiciendis, dolor quos dolore libero voluptatum ducimus nisi quo necessitatibus doloribus qui minima reprehenderit architecto fugiat ea earum.</p>
+    <section id="contact " class="container my-5 ">
+        <h2 class="display-3 font-weight-bold text-center my-4 ">Contáctame</h2>
+        <p class="my-4 text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, asperiores facilis. Beatae, reiciendis, dolor quos dolore libero voluptatum ducimus nisi quo necessitatibus doloribus qui minima reprehenderit architecto fugiat ea earum.</p>
 
         <form>
-            <div class="form-group">
-                <label for="formGroupExampleInput">Nombre</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu nombre">
+            <div class="form-group ">
+                <label for="formGroupExampleInput ">Nombre</label>
+                <input type="text " class="form-control " id="formGroupExampleInput " placeholder="Ingresa tu nombre ">
             </div>
 
-            <div class="form-group">
-                <label for="exampleInputEmail1">Correo electrónico</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu correo electrónico">
+            <div class="form-group ">
+                <label for="exampleInputEmail1 ">Correo electrónico</label>
+                <input type="email " class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp " placeholder="Ingresa tu correo electrónico ">
             </div>
 
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe tu mensaje"></textarea>
+            <div class="form-group ">
+                <label for="exampleFormControlTextarea1 ">Mensaje</label>
+                <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 " placeholder="Escribe tu mensaje "></textarea>
             </div>
 
-            <div class="contact-button-inner text-right">
-                <button type="submit" class="btn btn-lg btn-info">Enviar</button>
+            <div class="contact-button-inner text-right ">
+                <button type="submit " class="btn btn-lg btn-info ">Enviar</button>
             </div>
         </form>
     </section>
 
-    <footer class="bg-dark text-center text-light p-3">
+    <footer class="bg-dark text-center text-light p-3 ">
         <p>Olovia Ros 2019. Todos los derechos reservados.</p>
     </footer>
 
     <!--jQuery 3.3.1-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
     <!--Popper JS 1.14.3-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
     <!--Bootstrap JS 4.1.3-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
 
 </body>
 

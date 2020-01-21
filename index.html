@@ -58,60 +58,125 @@
         </div>
     </header>
 
-    <section id="about" class="container text-center my-5">
-
-        <h2 class="display-3 font-weight-bold my-4">Acerca de mi</h2>
-        <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eliam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagitis.</p>
-
+    <div class="container my-5 py-3">
         <div class="row">
-            <div class="col-md-4">
-                <i class="fas fa-camera my-3 fa-3x my-3"></i>
-                <h3 class="my-3">Fotógrafa de comida</h3>
-                <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.Etiam a mauris id purus blandit dapibus</p>
+            <div class="col-lg-4 text-right p-4">
+                <h2 class="font-weight-bold">Me has visto en:</h2>
             </div>
 
-            <div class="col-md-4">
-                <i class="fas fa-bullhorn my-3 fa-3x my-3"></i>
-                <h3 class="my-3">Crítica culinaria</h3>
-                <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.Etiam a mauris id purus blandit dapibus</p>
+            <!--Clase rounde le da un borde redondeado al contenedor-->
+            <div class="col-lg-8 bg-secondary text-white rounded pt-4 pb-5">
+                <!--Generando el carousel-->
+                <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+                    <!--Lista ordenada que genera los indicadores para cambiar de item del carousel, parten de 0, cada uno representa un item del carousel-->
+                    <ol class="carousel-indicators">
+                        <!--El primer indicador tiene la clase active, ya que es el primer item activo-->
+                        <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#blogCarousel" data-slide-to="1"></li>
+                    </ol>
+                    <!-- Este div contiene los items del carousel-->
+                    <div class="carousel-inner">
+                        <!-- 2 divs class="carousel-items text-center". El primero tiene la clase active para ser mostrado en primer lugar-->
+                        <div class="carousel-item active text-center">
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="fab fa-codepen fa-2x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Codepen."></i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="fab fa-apper fa-2x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Apper."></i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="fab fa-angrycreative fa-2x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Angry Creative."></i>
+                                </div>
+
+                                <div class="col-3">
+                                    <i class="fab fa-google fa-2x" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Google."></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="fab fa-500px fa-2x data-container=" body " data-toggle="popover "
+                                    data-trigger="hover " data-placement="bottom " data-content="Codepen. "></i>
+                                </div>
+                                <div class="col-3 ">
+                                    <i class="fab fa-apple fa-2x " data-container="body " data-toggle="popover "
+                                    data-trigger="hover " data-placement="bottom " data-content="Apple. "></i>
+                                </div>
+                                <div class="col-3 ">
+                                    <i class="fab fa-aviato fa-2x " data-container="body " data-toggle="popover "
+                                    data-trigger="hover " data-placement="bottom " data-content="Aviato. "></i>
+                                </div>
+                                <div class="col-3 ">
+                                    <i class="fab fa-d-and-d fa-2x " data-container="body " data-toggle="popover "
+                                    data-trigger="hover " data-placement="bottom " data-content="And. "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-md-4">
-                <i class="far fa-map my-3 fa-3x my-3"></i>
-                <h3 class="my-3">Bloggera de viajes</h3>
-                <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.Etiam a mauris id purus blandit dapibus</p>
+        </div>
+
+    </div>
+
+    <section id="about " class="container text-center my-5 ">
+
+        <h2 class="display-3 font-weight-bold my-4 ">Acerca de mi</h2>
+        <p class="my-4 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eliam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagitis.</p>
+
+        <div class="row ">
+            <div class="col-md-4 ">
+                <i class="fas fa-camera my-3 fa-3x my-3 "></i>
+                <h3 class="my-3 ">Fotógrafa de comida</h3>
+                <p class="my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.Etiam a mauris id purus blandit dapibus</p>
+            </div>
+
+            <div class="col-md-4 ">
+                <i class="fas fa-bullhorn my-3 fa-3x my-3 "></i>
+                <h3 class="my-3 ">Crítica culinaria</h3>
+                <p class="my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.Etiam a mauris id purus blandit dapibus</p>
+            </div>
+
+            <div class="col-md-4 ">
+                <i class="far fa-map my-3 fa-3x my-3 "></i>
+                <h3 class="my-3 ">Bloggera de viajes</h3>
+                <p class="my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.Etiam a mauris id purus blandit dapibus</p>
             </div>
         </div>
     </section>
 
-    <section id="work" class="container-fluid my-5 p-5 bg-info">
-        <h2 class="display-3 text-center font-weight-bold my-4 text-white">Mis trabajos</h2>
+    <section id="work " class="container-fluid my-5 p-5 bg-info ">
+        <h2 class="display-3 text-center font-weight-bold my-4 text-white ">Mis trabajos</h2>
 
         <!--Card 1-->
-        <div class="card-deck">
-            <div class="card">
-                <img class="card-img-top" src="assets/img/card-1.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Asado en la Patagonia</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum modi, dicta neque blanditiis eos, consequuntur quasi maxime consequatur aliquam laudantium reiciendis provident cupiditate repellendus omnis suscipit saepe sequi vitae
+        <div class="card-deck ">
+            <div class="card ">
+                <img class="card-img-top " src="assets/img/card-1.jpg " alt="Card image cap ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Asado en la Patagonia</h5>
+                    <p class="card-text ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum modi, dicta neque blanditiis eos, consequuntur quasi maxime consequatur aliquam laudantium reiciendis provident cupiditate repellendus omnis suscipit saepe sequi vitae
                         sed.
                     </p>
 
-                    <a class="btn btn-outline-info" data-toggle="modal" data-target="#asado">Ver más</a>
+                    <a class="btn btn-outline-info " data-toggle="modal " data-target="#asado ">Ver más</a>
                 </div>
             </div>
 
-            <div class="modal" id="asado" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Asado en la Patagonia</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+            <div class="modal " id="asado " tabindex="-1 " role="dialog ">
+                <div class="modal-dialog " role="document ">
+                    <div class="modal-content ">
+                        <div class="modal-header ">
+                            <h5 class="modal-title ">Asado en la Patagonia</h5>
+                            <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                        <span aria-hidden="true ">&times;</span>
                       </button>
                         </div>
-                        <div class="modal-body">
-                            <img class="img-fluid my-3" src="assets/img/card-1.jpg" alt="">
+                        <div class="modal-body ">
+                            <img class="img-fluid my-3 " src="assets/img/card-1.jpg " alt=" ">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -121,35 +186,35 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <div class="modal-footer ">
+                            <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!--Card 2-->
-            <div class="card">
-                <img class="card-img-top" src="assets//img/card-2.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Papas del fin del mundo</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, optio. Repudiandae, debitis, accusantium temporibus molestias maxime veniam quaerat ab, expedita tenetur odit quas natus eaque optio rerum quia sit adipisci.</p>
+            <div class="card ">
+                <img class="card-img-top " src="assets//img/card-2.jpg " alt="Card image cap ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Papas del fin del mundo</h5>
+                    <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, optio. Repudiandae, debitis, accusantium temporibus molestias maxime veniam quaerat ab, expedita tenetur odit quas natus eaque optio rerum quia sit adipisci.</p>
 
-                    <a data-toggle="modal" data-target="#papas" class="btn btn-outline-info">Ver más</a>
+                    <a data-toggle="modal " data-target="#papas " class="btn btn-outline-info ">Ver más</a>
                 </div>
             </div>
 
-            <div class="modal" id="papas" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Asado en la Patagonia</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+            <div class="modal " id="papas " tabindex="-1 " role="dialog ">
+                <div class="modal-dialog " role="document ">
+                    <div class="modal-content ">
+                        <div class="modal-header ">
+                            <h5 class="modal-title ">Asado en la Patagonia</h5>
+                            <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                        <span aria-hidden="true ">&times;</span>
                       </button>
                         </div>
-                        <div class="modal-body">
-                            <img class="img-fluid my-3" src="assets/img/card-2.jpg" alt="">
+                        <div class="modal-body ">
+                            <img class="img-fluid my-3 " src="assets/img/card-2.jpg " alt=" ">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -159,27 +224,27 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <div class="modal-footer ">
+                            <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!--Card 3-->
-            <div class="card">
-                <img class="card-img-top" src="assets/img/card-3.jpg" alt="Card image cap">
-                <div class="card-body">
+            <div class="card ">
+                <img class="card-img-top " src="assets/img/card-3.jpg " alt="Card image cap ">
+                <div class="card-body ">
 
-                    <h5 class="card-title">Salmones de Alaska</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro quidem blanditiis rem a accusamus quos quisquam molestias nobis delectus animi eum, unde, quod maxime tenetur recusandae voluptate exercitationem ducimus laudantium!</p>
+                    <h5 class="card-title ">Salmones de Alaska</h5>
+                    <p class="card-text ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro quidem blanditiis rem a accusamus quos quisquam molestias nobis delectus animi eum, unde, quod maxime tenetur recusandae voluptate exercitationem ducimus laudantium!</p>
 
-                    <a data-toggle="modal" data-target="#salmones" class="btn btn-outline-info">Ver más</a>
+                    <a data-toggle="modal " data-target="#salmones " class="btn btn-outline-info ">Ver más</a>
 
                 </div>
             </div>
 
-            <div id="salmones" class="modal " tabindex="-1 " role="dialog ">
+            <div id="salmones " class="modal " tabindex="-1 " role="dialog ">
                 <div class="modal-dialog " role="document ">
                     <div class="modal-content ">
                         <div class="modal-header ">
@@ -235,7 +300,7 @@
     </section>
 
     <footer class="bg-dark text-center text-light p-3 ">
-        <p>Olovia Ros 2019. Todos los derechos reservados.</p>
+        <p>Olivia Ros 2019. Todos los derechos reservados.</p>
     </footer>
 
     <!--jQuery 3.3.1-->
